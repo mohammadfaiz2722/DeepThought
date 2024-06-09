@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Start */
+.home-icon {
+    background-color: #0017FF;
+    color: white;
+    padding: 9px;
+    border-radius: 50%;
+    color: white;
+    margin-left: 12px;
+}
+
+.deep-thought-logo img {
+    /* position: absolute; */
+    margin-top: 12px;
+}
+
+nav {
+    background-color: #F0F0F0;
+    height: 7vh;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* margin-top: -12px; */
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+/* NavBar End */
+
+
+/* Management Starts */
+.management {
+    display: flex;
+    margin-top: 12px;
+}
+
+.heading {
+    font-weight: 900;
+    width: 670vw;
+    margin-left: 5%;
+}
+.heading h1{
+    margin-left: 15%;
+}
+.mg-btn {
+    background-color: #0017FF;
+    color: white;
+    padding: 10px;
+    border: none;
+    position: absolute;
+    left: 88%;
+    border-radius: 12px;
+}
+
+.des-box h1 {
+    color: black;
+    /* margin-left: ; */
+    /* border: none; */
+
+}
+
+.des-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 74vw;
+    margin: 10px auto;
+    margin-top: 42px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+}
+
+/* Management Ends */
+
+
+/* Left Sidebar */
+.left-sidebar {
+    background-color: white;
+    width: 19vw;
+    height: 50vh;
+    min-height: 50vh;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    position: absolute;
+    top: 10%;
+}
+
+.left-sidebar i {
+    margin-left: 50%;
+}
+
+.journey {
+    background-color: black;
+    padding: 10px;
+}
+.left-sidebar-li{
+    color: black;
+    margin-left: 22px;
+}
+.left-sidebar-ul{
+    list-style: disc;
+}
+.left-aligned{
+    position: absolute;
+    right: 5%;
+    display: none;
+}
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 4%;
+    transition: left 0.5s ease; /* Added transition */
+}
+.sidebar.closed {
+    left: -200px; /* Shift sidebar to the left when closed */
+}
+.none{
+    display: none;
+}
+.open{
+    display: block;
+}
