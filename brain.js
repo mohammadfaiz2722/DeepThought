@@ -18,11 +18,21 @@ fetch('data.json')
     .catch(error => console.error('Error fetching data:', error));
 
 
-const leftSidebarArrow=document.getElementById('left-close')
-const leftSidebar=document.getElementById('left-sidebar')
-console.log(leftSidebarArrow);
+    const leftSidebar=document.getElementById('left-sidebar')
+    const rightArrow=document.getElementById('left-close-right')
+    const leftArrow=document.getElementById('left-close')
 
-leftSidebar.addEventListener("click",()=>{
+console.log(rightArrow);
+
+leftArrow.addEventListener("click",()=>{
    leftSidebar.classList.add('closed')
+   leftArrow.style.display='none'
+//    leftSidebar.style.display='none'
+rightArrow.style.display='block';
 
+})
+rightArrow.addEventListener("click",()=>{
+    rightArrow.style.display='none'
+    leftArrow.style.display='block'
+    leftSidebar.classList.remove('closed')
 })
